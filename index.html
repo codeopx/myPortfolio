@@ -153,7 +153,23 @@
             background: url('assets/space3.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
-            padding: 60px 15px; /* Added padding */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 60px 15px;
+        }
+
+        .landing-page .text-container {
+            max-width: 600px;
+        }
+
+        .landing-page h1 {
+            margin-bottom: 10px;
+        }
+
+        .landing-page p {
+            margin-bottom: 30px;
         }
 
         @media (max-width: 768px) {
@@ -338,27 +354,21 @@
     </nav>
 
     <div id="section0" class="container-fluid landing-page">
-        <div class="row vh-100 d-flex align-items-center justify-content-center">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-12 col-sm-6 text-start">
-                        <h1 style="color: white;">Hello, I am</h1>
-                        <h1 class="name" style="font-size: 80px;">Toby Nosa</h1>
-                        <h1 style="color: white;">A Web and Mobile Developer</h1>
-                        <p style="font-size: 17px;">
-                            Skilled in HTML, CSS, JavaScript, React JS, and React Native.
-                            I excel in building dynamic websites and scalable mobile applications.
-                        </p>
-                        <div class="mt-3">
-                            <a href="#section4" class="btn btn-warning btn-lg me-2">Contact Me</a>
-                            <a href="#section1" class="btn btn-outline-light btn-lg">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 text-center rocket-container">
-                        <img class="rocket-img" src="assets/rocket.png" alt="Rocket">
-                    </div>
-                </div>
+        <div class="text-container">
+            <h1 style="color: white;">Hello, I am</h1>
+            <h1 class="name" style="font-size: 80px;">Toby Nosa</h1>
+            <h1 style="color: white;">A Web and Mobile Developer</h1>
+            <p style="font-size: 17px;">
+                Skilled in HTML, CSS, JavaScript, React JS, and React Native.
+                I excel in building dynamic websites and scalable mobile applications.
+            </p>
+            <div class="mt-3">
+                <a href="#section4" class="btn btn-warning btn-lg me-2">Contact Me</a>
+                <a href="#section1" class="btn btn-outline-light btn-lg">Know More</a>
             </div>
+        </div>
+        <div class="rocket-container">
+            <img class="rocket-img" src="assets/rocket.png" alt="Rocket">
         </div>
     </div>
 
@@ -647,4 +657,4 @@ document.addEventListener("DOMContentLoaded", function() {
     var form = document.querySelector(".contact-form");
     form.onsubmit = mailMe;
 });
-</script>
+</script> 
